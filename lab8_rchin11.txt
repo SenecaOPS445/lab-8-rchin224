@@ -1,0 +1,40 @@
+
+PLAY [rchin11] *****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [rchin11]
+
+TASK [Ensure Apache is updated] ************************************************
+ok: [rchin11]
+
+TASK [Install EPEL repository] *************************************************
+ok: [rchin11]
+
+TASK [Remove 'tree' package] ***************************************************
+changed: [rchin11]
+
+TASK [Set hostname to Seneca ID] ***********************************************
+ok: [rchin11]
+
+TASK [Create new user with sudo access] ****************************************
+ok: [rchin11]
+
+TASK [Allow user to run sudo without password] *********************************
+ok: [rchin11]
+
+TASK [Configure SSH public key for the user] ***********************************
+ok: [rchin11]
+
+TASK [Create lab directory structure] ******************************************
+ok: [rchin11] => (item=1)
+ok: [rchin11] => (item=2)
+ok: [rchin11] => (item=3)
+ok: [rchin11] => (item=4)
+ok: [rchin11] => (item=5)
+ok: [rchin11] => (item=6)
+ok: [rchin11] => (item=7)
+ok: [rchin11] => (item=8)
+
+PLAY RECAP *********************************************************************
+rchin11                    : ok=9    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
